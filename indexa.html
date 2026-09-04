@@ -21,7 +21,38 @@
     </section>
     <section id="form">
       <h2>个人信息</h2>
-      <p>（表单下一步填在这里）</p>
+      <form action="#" method="get">
+  <p>
+    <label for="name">姓名</label>
+    <input type="text" id="name" name="name" placeholder="怎么称呼你" required>
+  </p>
+  <p>
+    <label for="mail">邮箱</label>
+    <input type="email" id="mail" name="mail" required>
+  </p>
+  <p>
+    <label for="age">年龄</label>
+    <input type="number" id="age" name="age" min="16" max="120" required>
+  </p>
+  <p>
+    <label for="grade">年级</label>
+  <select id="grade" name="grade" required>
+    <option value="">请选择</option>
+    <option value="1">大一</option>
+    <option value="2">大二</option>
+  </select>
+  </p>
+  <p>
+    <label for="club">社团</label>
+    <input type="text" id="club" name="club" placeholder="请输入社团名称" required>
+  </p>
+  <label for="reason">报名原因</label>
+  <textarea id="reason" name="reason" rows="4" placeholder="至少写一句" required></textarea>
+  <p>
+    <button type="submit">提交报名</button>
+  </p>
+</form>
+
     </section>
   </main>
   <footer>
