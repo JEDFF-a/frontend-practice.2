@@ -1,0 +1,28 @@
+
+<form>
+  <input type="text" name="username" placeholder="请输入姓名" required>
+  <input type="email" name="mail" required>
+  <input type="password" name="pwd">
+  <input type="number" name="age" min="16" max="120">
+  <input type="date" name="birthday">
+  <p>课程评分</p>
+  <label><input type="radio" name="score" value="好" required> 好</label>
+  <label><input type="radio" name="score" value="中"> 中</label>
+  <label><input type="radio" name="score" value="差"> 差</label>
+
+  <p>感兴趣的主题（可多选）</p>
+  <label><input type="checkbox" name="topic" value="html"> HTML</label>
+  <label><input type="checkbox" name="topic" value="css"> CSS</label>
+  <label><input type="checkbox" name="topic" value="js"> JavaScript</label>
+  <label for="grade">年级</label>
+  <select id="grade" name="grade" required>
+    <option value="">请选择</option>
+    <option value="1">大一</option>
+    <option value="2">大二</option>
+  </select>
+
+  <label for="advice">你的建议</label>
+  <textarea id="advice" name="advice" rows="4" placeholder="至少写一句" required></textarea>
+  <button type="submit">提交</button>
+  <button type="reset">重置</button>
+</form>
